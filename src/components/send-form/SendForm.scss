@@ -1,0 +1,43 @@
+@import '../../styles/colors.scss';
+.sendForm {
+  background-color: $secondary-background;
+  border-top: 2px solid $border-color;
+  .sendFormContent {
+    padding: 30px 25px;
+    position: relative;
+    .sendFormInput {
+      display: block;
+      width: 100%;
+      color: $primary-text;
+      outline: none;
+      border-radius: 25px;
+      border: 2px solid $border-color;
+      font-size: 15px;
+      padding: 15px;
+    }
+
+    .searchInput::placeholder {
+      color: $secondary-text;
+    }
+
+    .sendButton {
+      position: absolute;
+      cursor: pointer;
+      bottom: 40px;
+      right: 40px;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border: none;
+      .sendButtonIcon {
+        width: 100%;
+        height: 100%;
+        color: $primary-text;
+      }
+    }
+
+    .sendButton:disabled .sendButtonIcon {
+      cursor: not-allowed;
+    }
+  }
+}

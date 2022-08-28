@@ -1,0 +1,45 @@
+@import '../../styles/_colors';
+
+.messageWrapper {
+  display: flex;
+  margin: 25px 10px 10px;
+
+  &.myMessage {
+    justify-content: flex-end;
+
+    .messageDate {
+      justify-content: flex-end;
+    }
+
+    .messageText {
+      color: $primary-text;
+      background-color: $message-background-secondary;
+    }
+  }
+
+  .messageBody {
+    max-width: 75%;
+  }
+
+  .messageImg {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+  }
+
+  .messageText {
+    color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: $message-background-primary;
+  }
+
+  .messageDate {
+    display: flex;
+    font-size: 12px;
+    color: $secondary-text;
+    padding: 8px 20px;
+  }
+}

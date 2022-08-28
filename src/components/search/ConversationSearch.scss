@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+
+
+  .searchInput {
+  display: block;
+  width: 100%;
+  color: $primary-text;
+  outline: none;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 8px 20px 8px 48px;
+  margin-top: 25px;
+  border: 2px solid $border-color;
+  background: url('../../images/search.svg') no-repeat $primary-background;
+  background-position: 15px center;
+  background-size: 20px 20px;
+}
+
+.searchInput::placeholder {
+  color: $secondary-text;
+}

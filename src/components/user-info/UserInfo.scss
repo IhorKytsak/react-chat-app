@@ -1,0 +1,43 @@
+@import '../../styles/colors.scss';
+
+.userContainer {
+  display: flex;
+  align-items: center;
+
+  .imgContainer {
+    position: relative;
+    margin-right: 20px;
+
+    .userImg {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .userInfoWrapper {
+    width: 100%;
+
+    .userDateWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+
+      .userDate {
+        font-size: 11px;
+        color: $primary-text;
+
+        .userName {
+          color: $primary-text;
+        }
+      }
+    }
+
+    .userMessage {
+      font-size: 12px;
+      color: $secondary-text;
+    }
+  }
+}

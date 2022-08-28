@@ -1,0 +1,27 @@
+@import '../../styles/colors.scss';
+
+.listContainer {
+  overflow-y: scroll;
+  height: calc(100vh - 236px);
+
+  .userInfoItemWrapper {
+    cursor: pointer;
+    padding: 20px;
+    border-bottom: 2px solid $border-color;
+
+    &:hover {
+      background-color: $secondary-background;
+    }
+  }
+
+  .chatNoFaund {
+    background-color: $secondary-background;
+    padding: 15px 30px;
+  }
+}
+
+.listTitle {
+  padding: 30px 20px;
+  font-size: 20px;
+  color: $chat-title;
+}

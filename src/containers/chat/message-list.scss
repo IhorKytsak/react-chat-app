@@ -1,0 +1,21 @@
+@import '../../styles/_colors.scss';
+
+.messageListContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: scroll;
+  height: calc(100vh - 185px);
+  padding: 0 10px;
+  background-color: $primary-background;
+  &.centered {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notChattingYet {
+    padding: 10px 20px;
+    background-color: $primary-background;
+    border: 2px solid $border-color;
+    border-radius: 15px;
+  }
+}

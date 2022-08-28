@@ -1,0 +1,38 @@
+@import '../../styles/_colors.scss';
+
+.chat {
+  flex: 2;
+
+  .chatTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 20px;
+    background-color: $secondary-background;
+    border-bottom: 2px solid $border-color;
+
+    & .userName {
+      font-size: 18px;
+    }
+
+    .backArrow {
+      color: $primary-text;
+      cursor: pointer;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: $secondary-text;
+      }
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  &.chatHidden {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
